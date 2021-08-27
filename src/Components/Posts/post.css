@@ -1,0 +1,116 @@
+/* Posts */
+.post_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1232px) {
+  .post_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 950px) {
+  .post_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 630px) {
+  .post_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Post */
+.post {
+  height: 22.438rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+  border-radius: 0rem 0rem 0.3rem 0.3rem;
+  overflow: auto;
+}
+.blog_info {
+  text-align: center;
+  padding: 0.5rem;
+}
+.blog_info > p,
+h3 {
+  margin: 0px;
+}
+.blog_category {
+  color: gray;
+  font-weight: 500;
+}
+.blog_title {
+  font-size: 1.5rem;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+.blog_author {
+  color: rgb(83, 83, 83);
+  font-weight: 500;
+}
+.blog_details {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Post Details */
+.post_info {
+  padding: 0.1rem 5rem;
+}
+@media (max-width: 540px) {
+  .post_info {
+    padding: 0.1rem 1rem;
+  }
+}
+.post_info_img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+.post_info_icons {
+  float: right;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.delete_icon {
+  margin-left: 1rem;
+  background-color: rgb(48, 48, 48);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10%;
+  color: rgb(20, 104, 231);
+}
+.delete_icon:hover {
+  background-color: rgb(238, 22, 51);
+  color: white;
+}
+.edit_icon {
+  margin-left: 1rem;
+  background-color: rgb(48, 48, 48);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10%;
+  color: orange;
+}
+.edit_icon:hover {
+  background-color: rgb(223, 236, 33);
+  color: black;
+}
+.post_info_title {
+  font-size: 2.37rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 3rem 0rem 1rem 0rem;
+}
+.post_info_subtitle {
+  margin: 1.8rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(73, 73, 73);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
